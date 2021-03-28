@@ -6,13 +6,13 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.0
 
 contract BsaToken is ERC20 {
     /**
-     * 构造函数
+     * constructor
      *
      * Requirements:
      *
-     * - `initialSupply` 代币发行总量
-     * - `name` 代币名称
-     * - `symbol` 代币符号
+     * - `initialSupply` token initial supply
+     * - `name` token name
+     * - `symbol` token symbol
      */
     constructor(uint256 initialSupply, string memory name, string memory symbol) ERC20(name, symbol) {
         _mint(msg.sender, initialSupply);
